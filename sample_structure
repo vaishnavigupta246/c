@@ -1,0 +1,22 @@
+#include<stdio.h>
+void main()
+{
+    struct sample
+    {
+       int number;
+       char name;
+       float percent;
+    };
+    struct sample n1,n2,n3;
+    scanf("%d %c %f\n",&n1.number,&n1.name,&n1.percent);
+    scanf("%d %c %f\n",&n2.number,&n2.name,&n2.percent);
+    scanf("%d %c %f\n",&n3.number,&n3.name,&n3.percent);
+
+    printf("%d %c %f\n",n1.number,n1.name,n1.percent);
+    printf("%p %p %p\n",&n1.number,&n1.name,&n1.percent);
+    printf("%d %c %f\n",n2.number,n2.name,n2.percent);
+    printf("%p %p %p\n",&n2.number,&n2.name,&n2.percent);
+    printf("%d %c %f\n",n3.number,n3.name,n3.percent);
+    printf("%p %p %p\n",&n3.number,&n3.name,&n3.percent);
+
+}
